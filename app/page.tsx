@@ -1,69 +1,222 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
+    <main className="min-h-screen bg-black text-white">
+
+      {/* NAVBAR */}
+      <nav className="flex items-center justify-between px-8 py-6 max-w-6xl mx-auto">
+        <h2 className="text-2xl font-bold">
+          POOJA<span className="text-purple-500">.</span>
+        </h2>
+
+        <div className="flex gap-8 text-sm text-gray-300">
+          <a href="#home" className="hover:text-white transition">
+            Home
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+
+          <a href="#about" className="hover:text-white transition">
+            About
+          </a>
+
+          <a href="#projects" className="hover:text-white transition">
+            Projects
+          </a>
+
+          <a href="#contact" className="hover:text-white transition">
+            Contact
           </a>
         </div>
-      </main>
-    </div>
+      </nav>
+
+
+      {/* HERO SECTION */}
+      <section
+        id="home"
+        className="min-h-[85vh] flex flex-col items-center justify-center text-center px-6"
+      >
+        <p className="text-purple-400 mb-4">
+          Hello, I'm
+        </p>
+
+        <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+          Pooja Kundu
+        </h1>
+
+        <h2 className="mt-4 text-2xl md:text-3xl text-gray-400">
+          Java Developer & Problem Solver
+        </h2>
+
+        <p className="max-w-2xl mt-6 text-gray-400 leading-7">
+          I build practical software projects using Java, Spring Boot,
+          web technologies and databases. I enjoy learning new technologies
+          and turning ideas into working applications.
+        </p>
+
+        <div className="flex gap-4 mt-8">
+          <a
+            href="#projects"
+            className="rounded-full bg-purple-600 px-6 py-3 font-medium hover:bg-purple-700 transition"
+          >
+            View Projects
+          </a>
+
+          <a
+            href="#contact"
+            className="rounded-full border border-gray-700 px-6 py-3 font-medium hover:bg-gray-900 transition"
+          >
+            Contact Me
+          </a>
+        </div>
+      </section>
+
+
+      {/* ABOUT SECTION */}
+      <section
+        id="about"
+        className="max-w-5xl mx-auto px-6 py-24"
+      >
+        <p className="text-purple-400 mb-2">
+          About Me
+        </p>
+        <p className="text-gray-400 leading-8 max-w-3xl">
+          I'm a developer focused on building my skills in Java,
+          problem solving and backend development. I enjoy creating
+          projects that solve real-world problems while continuously
+          improving my understanding of software development.
+        </p>
+      </section>
+            {/* SKILLS SECTION */}
+      <section className="max-w-5xl mx-auto px-6 py-16">
+        <p className="text-purple-400 mb-2">
+          Skills
+        </p>
+        <h2 className="text-4xl font-bold mb-10">
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="border border-gray-800 rounded-xl p-5 hover:border-purple-500 transition">
+            Java
+          </div>
+          <div className="border border-gray-800 rounded-xl p-5 hover:border-purple-500 transition">
+            Python
+          </div>
+          <div className="border border-gray-800 rounded-xl p-5 hover:border-purple-500 transition">
+            JavaScript
+          </div>
+          <div className="border border-gray-800 rounded-xl p-5 hover:border-purple-500 transition">
+            Next.js
+          </div>
+          <div className="border border-gray-800 rounded-xl p-5 hover:border-purple-500 transition">
+            HTML & CSS
+          </div>
+          
+          <div className="border border-gray-800 rounded-xl p-5 hover:border-purple-500 transition">
+            REST APIs
+          </div>
+        </div>
+      </section>
+  {/* PROJECTS SECTION */}
+      <section
+        id="projects"
+        className="max-w-5xl mx-auto px-6 py-24">
+        <h2 className="text-4xl font-bold mb-10">
+          Projects
+        </h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* PROJECT 2 */}
+          <div className="border border-gray-800 rounded-2xl p-6 hover:border-purple-500 transition">
+
+            <p className="text-sm text-purple-400 mb-3">
+              Python • AI • FastAPI
+            </p>
+            <h3 className="text-2xl font-semibold mb-3">
+              InterviewPilot AI
+            </h3>
+            <p className="text-gray-400 leading-7">
+              An AI-powered interview platform that generates
+              adaptive interview questions and provides feedback
+              based on the candidate's responses.
+            </p>
+          </div>
+      <div className="border border-gray-800 rounded-2xl p-6 hover:border-purple-500 transition">
+
+            <p className="text-sm text-purple-400 mb-3">
+              Python • Streamlit • Machine Learning
+            </p>
+
+            <h3 className="text-2xl font-semibold mb-3">
+              Smart Stock Advisor
+            </h3>
+
+            <p className="text-gray-400 leading-7">
+              A data-driven application that analyzes market
+              information and presents stock insights through
+              an interactive interface.
+            </p>
+
+          </div>
+          {}
+          <div className="border border-gray-800 rounded-2xl p-6 hover:border-purple-500 transition">
+
+            <p className="text-sm text-purple-400 mb-3">
+              HTML • CSS • JavaScript
+            </p>
+
+            <h3 className="text-2xl font-semibold mb-3">
+              Personal Portfolio
+            </h3>
+            <p className="text-gray-400 leading-7">
+              A responsive developer portfolio that shows my
+              skills, projects and experience.
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+      {/* CONTACT SECTION */}
+      <section
+        id="contact"
+        className="max-w-5xl mx-auto px-6 py-24 text-center"
+      >
+
+        <p className="text-purple-400 mb-2">
+          Get In Touch
+        </p>
+
+        <h2 className="text-4xl font-bold">
+          Let's Connect
+        </h2>
+
+        <p className="text-gray-400 mt-5">
+          Interested in working together or discussing a project?
+        </p>
+
+        <a
+          href="mailto:your-email@example.com"
+          className="inline-block mt-8 rounded-full bg-purple-600 px-7 py-3 hover:bg-purple-700 transition"
+        >
+          Email Me
+        </a>
+        <br />
+      <a
+          href="Pooja"
+          className="inline-block mt-8 rounded-full bg-purple-600 px-7 py-3 hover:bg-purple-700 transition"
+        >
+          Name
+        </a>
+       </section>
+       <br />
+       <a
+          href="1234567890"
+          className="inline-block mt-8 rounded-full bg-purple-600 px-7 py-3 hover:bg-purple-700 transition"
+        >
+          Contact
+        </a>
+        <br />
+      {/* FOOTER */}
+      <footer className="border-t border-gray-800 py-8 text-center text-gray-500">
+        © 2026 Pooja Kundu. Built with Next.js.
+      </footer>
+
+    </main>
   );
 }
