@@ -7,12 +7,7 @@ export default function Projects() {
         <p className="small-heading">MY WORK</p>
 
         <h1>Projects I&apos;ve Built.</h1>
-
-        <p>
-          A collection of projects I&apos;ve worked on while learning,
-          experimenting, and building real-world development skills.
-        </p>
-      </section>
+   </section>
 
 
       {/* Projects */}
@@ -96,19 +91,6 @@ export default function Projects() {
           </div>
 
         </div>
-
-      </section>
-      {}
-      <section className="projects-bottom">
-
-        <p className="small-heading">WHAT&apos;S NEXT?</p>
-
-        <h2>More ideas. More projects.</h2>
-
-        <p>
-          I&apos;m continuously working on new projects to improve my
-          technical skills and explore new technologies.
-        </p>
 
       </section>
 
