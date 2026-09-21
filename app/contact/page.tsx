@@ -8,18 +8,14 @@ export default function Contact() {
 
         <h1>Let&apos;s Connect.</h1>
 
-        <p>
-          Have a project, internship opportunity, or just want to say hello?
-          Feel free to reach out. I&apos;d love to connect with you.
-        </p>
-      </section>
+           </section>
 
       {/* Contact Information */}
       <section className="contact-container">
 
         {/* Email */}
         <div className="contact-card">
-          <span className="contact-icon">✉</span>
+          <span className="contact-icon"></span>
 
           <div>
             <h2>Email</h2>
@@ -34,7 +30,7 @@ export default function Contact() {
 
         {/* Phone */}
         <div className="contact-card">
-          <span className="contact-icon">☎</span>
+          <span className="contact-icon"></span>
 
           <div>
             <h2>Phone</h2>
@@ -46,27 +42,7 @@ export default function Contact() {
             </a>
           </div>
         </div>
-
-        {/* LinkedIn */}
-        <div className="contact-card">
-          <span className="contact-icon">in</span>
-
-          <div>
-            <h2>LinkedIn</h2>
-
-            <p>Connect with me professionally</p>
-
-            <a
-              href="https://www.linkedin.com/in/your-profile/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View LinkedIn →
-            </a>
-          </div>
-        </div>
-
-        </section>
+               </section>
 
       {/* Closing message */}
       <section className="contact-bottom">

@@ -68,7 +68,7 @@ export default function Projects() {
         {}
         <div className="project-card">
 
-          <div className="project-number">04</div>
+          <div className="project-number">03</div>
 
           <div className="project-content">
 
